@@ -1,3 +1,6 @@
 
 # Dependency directories
 node_modules/
+
+# macOS index files
+.DS_Store
