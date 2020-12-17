@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSSGrid-Playground</title>
+</head>
+<body>
+<style>
+    #my-beautiful-webside {
+        display: grid;
+        max-width: 500px;
+        max-height: 500px;
+        color:black;
+        grid-template-areas: "header header header" "main main aside" "footer footer footer";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+
+    .header{
+        grid-area: header;
+        background-color: lightcoral;
+    }
+
+    .main{
+        grid-area: main;
+        background-color: lightskyblue;
+    }
+
+    .aside{
+        grid-area: aside;
+        background-color: lemonchiffon;
+    }
+
+    .footer{
+        grid-area: footer;
+        background-color: lightgreen;
+    }
+</style>
+<div id="my-beautiful-webside">
+    <header class="header">HEADER</header>
+    <main class="main">MAIN</main>
+    <aside class="aside">ASIDE</aside>
+    <footer class="footer" >FOOTER</footer>
+</div>
+</body>
+</html>
