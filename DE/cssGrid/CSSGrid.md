@@ -1,23 +1,24 @@
-# CSS-Grid in a nutshell
+# CSSGrid in a nutshell
 
 ## Was ist CSSGrid?
-CSSGrid ist ein Konzept in CSS, welches dem Entwickler erlaubt, das Layouting für eine Website ohne eigene Berechnungen im Styling durchführen zu müssen. 
-Auch lassen sich mithilfe von CSSGrid unter Anderem Darstellungs-Elemente wie Informationskarten mit relativ wenig Aufwand im Vergleich zu anderen Konzepten erstellen.
+Welcher Web-Entwickler kennt sie nicht, Seitenlayouts, die mithilfe von floats und den wildesten calc()-Berechnungen geschrieben sind. Dank CSSGrid gibt es nun aber auch eine schnelle, leicht verständliche Alternative. In diesem Blog geht es mir darum, aufzuzeigen, wie schnell CSSGrid eingebunden werden kann und welche Besonderheiten es mit sich bringt.
+Besonders in Verbindung mit anderen Styling-Konzepten wie zum Beispiel Flexbox können im Handumdrehen schöne Ergebnisse erziehlt werden. 
 
-In CSSGrid wird (im besten Fall) jedes angezeigte HTML-Element einem Bereich (im Nachfolgenden area genannt) zugeordnet, im folgenden Beispiel sind dies 'header', 'main', 'aside' & 'footer':
+Um die Basiskonzepte von CSSGrid verständlich darzustellen, werde ich eine Website, aufgeteilt in die vier Bereiche 'Header', 'Main', 'Aside' und 'Footer' Schritt für Schritt um ein weiteres Feature ergänzt. 
 
-## Was sind die Vor- und Nachteile von CSSGrid?
+## Vor- und Nachteile
 
 | Vorteile                                                      | Nachteile                                             |
 | ------------------------------------------------------------- |-------------------------------------------------------| 
 | schnell und unkompliziert umgesetzt                           | Änderungen im Nachhinein unter Umständen zeitaufwändig|
-| keine Berechnungen im Style-Sheet nötig                       | Anpassungen zur Nutzung im IE11 erforderlich          |
+| keine komplizierten Berechnungen im Style-Sheet nötig         | Anpassungen zur Nutzung im IE11 erforderlich          |
 | eigene Einheit zur Festlegung der Höhe/ Breite einer Area     |                                                       |
-
+| gut mit anderen Stylingtools kombinierbar                     |                                                       |
+|                                                               |                                                       |
 
 Nun da das erste Grid definiert ist, fahren wir damit fort, dieses mehr und mehr auf eventuelle Anforderungen anzupassen. <br>
 Eine solche Anforderung könnte zum Beispiel sein, dass die Grids nucht unmittelbar miteinander verbunden sind. Auch zu diesem
- Zweck bietet CSSGrid ein Attribut, welches uns erlaubt eine sogenante Gap zwischen den einzelnen Areas anzuwenden: grid-gap
+Zweck bietet CSSGrid ein Attribut, welches uns erlaubt eine sogenante Gap zwischen den einzelnen Areas anzuwenden: grid-gap
 
 
 ## Der Weg zur ersten View mit CSSGrid
@@ -217,3 +218,8 @@ Mithilfe der Fractions ist es nun möglich, das zuvor generierte neun-Area-groß
 ## Fazit
 
 Mit wenigen Zeilen Code und Styling entsteht so schon ein Grid welches die horizontale und vertikale Anzeige in neun Felder aufteilt und deren Inhalt nach den Angaben in CSS aufteilt.
+
+
+## Funfact zu diesem Blog-Artikel: 
+
+Alle gezeigten 'Grafiken' sind ebenfalls in CSSGrid geschrieben, da CSSGrid markdown kompatibel ist.
